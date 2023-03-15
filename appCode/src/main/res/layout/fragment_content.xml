@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+
+            android:scaleType="centerCrop"
+            android:id="@+id/imageViewHashtagContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carl_raw_background_header" />
+
+        <TextView
+            android:background="@drawable/gradien_black_color"
+            android:id="@+id/textViewSubCategoryHashtagContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/coiny"
+            android:gravity="center"
+            android:text="Art"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewHashtagContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:fontFamily="@font/coiny" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/textViewContentHashtags"
+            android:fontFamily="@font/londrina_solid"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_weight="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_blue_bright"
+            android:id="@+id/buttonCopyContent"
+            android:text="COPY"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+          <Button
+              android:textStyle="bold"
+              android:textColor="@android:color/black"
+              android:background="@android:color/holo_blue_bright"
+            android:id="@+id/buttonCopyAndOpenInstaContent"
+            android:text="COPY And OPEN INSTAGRAM"
+            android:layout_weight="3.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="6dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:text="Dashboard"
+        android:id="@+id/buttonDashboardContent"
+        android:layout_weight="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/advBanner"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+</LinearLayout>
